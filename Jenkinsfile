@@ -6,8 +6,8 @@ pipeline {
     }
     
     tools {
-        maven 'Maven 3.8.6'
-        jdk 'JDK 17'
+        maven 'MAVEN3'
+        jdk 'JAVA_HOME'
     }
     
     stages {
@@ -48,7 +48,6 @@ pipeline {
     
     post {
         always {
-            // Clean workspace after build
             cleanWs()
         }
     }
